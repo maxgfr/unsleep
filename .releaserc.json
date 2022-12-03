@@ -14,9 +14,9 @@
     "@semantic-release/git",
     "@semantic-release/github", {
       "assets": [
-        {"path": "build/index-macos", "label": "Mac OS x64"},
-        {"path": "build/index-linux", "label": "Linux x64"},
-        {"path": "build/index-win.exe", "label": "Windows x64"}
+        {"path": "./build/index-macos", "label": "Mac OS x64"},
+        {"path": "./build/index-linux", "label": "Linux x64"},
+        {"path": "./build/index-win.exe", "label": "Windows x64"}
       ]
     }
   ]
