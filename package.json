@@ -30,7 +30,7 @@
     "build:watch": "tsc -w -p tsconfig.build.json",
     "build:swc": "swc ./src -d build",
     "build:swc:watch": "swc ./src -d build -w",
-    "build:pkg": "pkg build/index.js --out-path dist/",
+    "build:pkg": "pkg build/index.js --out-path dist/ --compress GZip",
     "lint": "eslint ./src --ext .ts",
     "prettier": "prettier --write './src/**/*.{ts,js,json}'",
     "release": "semantic-release"
