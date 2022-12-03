@@ -1,28 +1,23 @@
 {
-  "name": "typescript-boilerplate-package",
-  "version": "1.0.3",
+  "name": "unsleep",
+  "version": "1.0.0",
   "author": "maxgfr",
   "license": "MIT",
-  "description": "A typescript boilerplate using swc to release a package on npm",
+  "description": "Tool to move your mouse to prevent your computer from sleeping",
   "main": "./build/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxgfr/typescript-boilerplate-package.git"
+    "url": "https://github.com/maxgfr/unsleep.git"
   },
   "bugs": {
-    "url": "https://github.com/maxgfr/typescript-boilerplate-package/issues"
+    "url": "https://github.com/maxgfr/unsleep/issues"
   },
-  "homepage": "https://github.com/maxgfr/typescript-boilerplate-package#readme",
+  "homepage": "https://github.com/maxgfr/unsleep#readme",
   "files": [
     "build"
   ],
   "keywords": [
-    "boilerplate",
-    "typescript",
-    "swc",
-    "package",
-    "release",
-    "github"
+    "unsleep"
   ],
   "scripts": {
     "start": "node build/index.js",
@@ -35,17 +30,19 @@
     "build:watch": "tsc -w -p tsconfig.build.json",
     "build:swc": "swc ./src -d build",
     "build:swc:watch": "swc ./src -d build -w",
+    "build:pkg": "pkg build/index.js --out-path build/",
     "lint": "eslint ./src --ext .ts",
     "prettier": "prettier --write './src/**/*.{ts,js,json}'",
     "release": "semantic-release"
   },
-  "dependencies": {},
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.7",
-    "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@swc-node/register": "1.5.4",
     "@swc/cli": "0.1.57",
@@ -60,6 +57,7 @@
     "eslint-plugin-jest": "27.1.6",
     "jest": "29.3.1",
     "nodemon": "2.0.20",
+    "pkg": "^5.8.0",
     "prettier": "2.8.0",
     "rimraf": "3.0.2",
     "semantic-release": "19.0.5",

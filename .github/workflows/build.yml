@@ -12,3 +12,5 @@ jobs:
         run: yarn
       - name: Build
         run: yarn build
+      - name: Build pkg
+        run: yarn build:pkg
