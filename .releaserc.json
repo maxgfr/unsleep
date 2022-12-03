@@ -11,13 +11,13 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/git",
     "@semantic-release/github", {
       "assets": [
         {"path": "dist/index-macos", "label": "Mac OS x64"},
         {"path": "dist/index-linux", "label": "Linux x64"},
         {"path": "dist/index-win.exe", "label": "Windows x64"}
       ]
-    }
+    },
+    "@semantic-release/git"
   ]
 }
