@@ -8,4 +8,5 @@ The executable is available in the [releases](https://github.com/maxgfr/unsleep/
 
 ```
 mv index-macos /usr/local/bin/unsleep
+unsleep
 ```
