@@ -59,7 +59,7 @@
     "nodemon": "2.0.22",
     "pkg": "^5.8.0",
     "prettier": "2.8.7",
-    "rimraf": "4.4.1",
+    "rimraf": "5.0.0",
     "semantic-release": "21.0.1",
     "typescript": "5.0.4"
   }
