@@ -1428,10 +1428,10 @@
     source-map-support "^0.5.21"
     tslib "^2.5.0"
 
-"@swc/cli@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@swc/cli/-/cli-0.3.0.tgz#377ec490ab5b20111e20248a38a18af10b56f91f"
-  integrity sha512-5QdBitM+jW5KBkH4SEXqdZOC8vI3fWdQMU5crl0KXB9l5AHqJvz/VvBXHwcWV8KkteUztJMOLDYZ8TsLcquKAw==
+"@swc/cli@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@swc/cli/-/cli-0.3.1.tgz#dedd532b48915b818be825cabd186349fb9b0370"
+  integrity sha512-sJFo3pcStb4GMP5Q0CxTyzDMmgqfNnFpaKdS1e/C3LOwFGvOo3H8eZ5xUv6MvZIc8eqqJKZxFI8X+Uq6iYJaiA==
   dependencies:
     "@mole-inc/bin-wrapper" "^8.0.1"
     commander "^7.1.0"
@@ -1663,10 +1663,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.21.tgz#864b987c0c68d07b4345845c3e63b75edd143644"
   integrity sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ==
 
-"@types/node@20.11.6":
-  version "20.11.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.6.tgz#6adf4241460e28be53836529c033a41985f85b6e"
-  integrity sha512-+EOokTnksGVgip2PbYbr3xnR7kZigh4LbybAfBAw5BpnQ+FqBYUsvCEjYd70IXKlbohQ64mzEYmMtlWUY8q//Q==
+"@types/node@20.11.7":
+  version "20.11.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.7.tgz#cb49aedd758c978c30806d0c38b520ed2a3df6e0"
+  integrity sha512-GPmeN1C3XAyV5uybAf4cMLWT9fDWcmQhZVtMFu7OR32WjrqGG+Wnk2V1d0bmtUyE/Zy1QJ9BxyiTih9z8Oks8A==
   dependencies:
     undici-types "~5.26.4"
 
