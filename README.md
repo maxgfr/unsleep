@@ -6,7 +6,10 @@ The executable is available in the [releases](https://github.com/maxgfr/unsleep/
 
 ## Mac OS
 
-```
-mv index-macos /usr/local/bin/unsleep
-unsleep
+```sh
+yarn
+yarn build
+yarn build:pkg
+mv dist/index-macos /usr/local/bin/unsleep
+unsleep -h
 ```
