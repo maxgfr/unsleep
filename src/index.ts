@@ -5,8 +5,8 @@ import packageJson from '../package.json';
 type ProgramOptions = {
   mouse: boolean | undefined;
   autoclick: boolean | undefined;
-  autoclickDelay: number | undefined;
-  mouseDelay: number | undefined;
+  autoclickDelay: string | undefined;
+  mouseDelay: string | undefined;
 };
 
 program
@@ -14,14 +14,13 @@ program
   .description('Prevent your computer from sleeping')
   .version(packageJson.version)
   .option('-a,--autoclick', 'Enable auto clicker')
-  .option('-ad,--autoclick-delay', 'Delay between auto clicks')
+  .option('-ad,--autoclick-delay <value>', 'Delay between auto clicks')
   .option('-m --mouse', 'Enable mouse movement')
   .option(
-    '-md, --mouse-delay',
+    '-md, --mouse-delay <value>',
     'Delay between mouse movements in ms (default: 5000)',
-  );
-
-program.parse();
+  )
+  .parse(process.argv);
 
 const options = program.opts<ProgramOptions>();
 
@@ -38,8 +37,8 @@ const randomIntFromInterval = (min: number, max: number) =>
 
 const screenSize = robot.getScreenSize();
 
-const MOUSE_DELAY_MS = mouseDelay ?? 5000;
-const AUTOCLICK_DELAY_MS = autoClickDelay ?? 5000;
+const MOUSE_DELAY_MS = mouseDelay ? parseInt(mouseDelay) : 5000;
+const AUTOCLICK_DELAY_MS = autoClickDelay ? parseInt(autoClickDelay) : 5000;
 
 (async function () {
   while (true) {
