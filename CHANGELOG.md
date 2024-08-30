@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/maxgfr/unsleep/compare/v1.0.7...v1.0.8) (2024-08-30)
+
+
+### Bug Fixes
+
+* warning ([3a08a18](https://github.com/maxgfr/unsleep/commit/3a08a185511db4e278c0f79bb9eadf097f5f6440))
+
 ## [1.0.7](https://github.com/maxgfr/unsleep/compare/v1.0.6...v1.0.7) (2024-08-29)
 
 
