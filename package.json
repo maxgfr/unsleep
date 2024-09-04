@@ -54,7 +54,7 @@
     "@swc/jest": "0.2.36",
     "@types/commander": "^2.12.2",
     "@types/jest": "29.5.12",
-    "@types/node": "20.16.3",
+    "@types/node": "20.16.4",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "@yao-pkg/pkg": "^5.12.1",
