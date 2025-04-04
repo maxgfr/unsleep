@@ -4,20 +4,22 @@
     "main",
     "next",
     "next-major",
-    {"name": "beta", "prerelease": true},
-    {"name": "alpha", "prerelease": true}
+    { "name": "beta", "prerelease": true },
+    { "name": "alpha", "prerelease": true }
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "@semantic-release/git",
-    ["@semantic-release/github", {
-      "assets": [
-        {"path": "dist/index-macos", "label": "Executable for mac os x64"},
-        {"path": "dist/index-linux", "label": "Executable for linux x64"},
-        {"path": "dist/index-win.exe", "label": "Executable for windows x64"}
-      ]
-    }]
+    "@semantic-release/npm",
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          { "path": "dist/index-macos", "label": "Executable for mac os x64" }
+        ]
+      }
+    ]
   ]
 }

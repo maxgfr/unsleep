@@ -2,14 +2,14 @@
 
 It is a tool to move your mouse to prevent your computer from sleeping.
 
-The executable is available in the [releases](https://github.com/maxgfr/unsleep/releases) section.
-
-## Mac OS
+## How to install
 
 ```sh
-yarn
-yarn build
-yarn build:pkg
-mv dist/index-macos /usr/local/bin/unsleep
+npm install -g unsleep
+unsleep
+
+# or by using npx
+npx unsleep
+
 unsleep -h
 ```
