@@ -11,6 +11,7 @@ jobs:
     runs-on: macos-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -22,5 +23,3 @@ jobs:
         run: yarn build:pkg
       - name: Release
         run: yarn release
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
