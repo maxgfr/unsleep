@@ -6,8 +6,6 @@ It is a tool to move your mouse to prevent your computer from sleeping.
 
 ```sh
 npm install -g unsleep
-unsleep
-
 # or by using npx
 npx unsleep
 
