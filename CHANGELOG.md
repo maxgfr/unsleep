@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/maxgfr/unsleep/compare/v1.1.0...v1.1.1) (2025-04-04)
+
+
+### Bug Fixes
+
+* add shebang ([9fdf056](https://github.com/maxgfr/unsleep/commit/9fdf056c59c447a3e2831fd2eacc2c91a30f0151))
+
 # [1.1.0](https://github.com/maxgfr/unsleep/compare/v1.0.8...v1.1.0) (2025-04-04)
 
 
