@@ -1,6 +1,6 @@
 # unsleep
 
-A simple utility tool to prevent your computer from sleeping by simulating mouse movements and clicks.
+A simple utility tool to prevent your computer from sleeping by simulating mouse movements and clicks
 
 ## Installation
 
