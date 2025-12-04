@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -28,6 +28,8 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: yarn build
+      - name: Build
+        run: yarn build:pkg
       - name: Release
         run: yarn release
       - name: Configure npm for OIDC
