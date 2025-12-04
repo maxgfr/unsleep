@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/maxgfr/unsleep/compare/v1.1.2...v1.1.3) (2025-12-04)
+
+
+### Bug Fixes
+
+* readme ([2aa509e](https://github.com/maxgfr/unsleep/commit/2aa509e3f6e5b39edc862c19c123235299c87aa8))
+
 ## [1.1.2](https://github.com/maxgfr/unsleep/compare/v1.1.1...v1.1.2) (2025-12-04)
 
 
