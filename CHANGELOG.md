@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/maxgfr/unsleep/compare/v1.1.1...v1.1.2) (2025-12-04)
+
+
+### Bug Fixes
+
+* build ([546177e](https://github.com/maxgfr/unsleep/commit/546177e734ef9065a906be9033faeb80b34b5274))
+* ci npm publish ([bfa3c77](https://github.com/maxgfr/unsleep/commit/bfa3c7783d15cc85c1bc09d57897558baa4ea626))
+* node version ([afe5351](https://github.com/maxgfr/unsleep/commit/afe5351e417aeb03973d4c86e0b018aeed5290ad))
+
 ## [1.1.1](https://github.com/maxgfr/unsleep/compare/v1.1.0...v1.1.1) (2025-04-04)
 
 
