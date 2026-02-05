@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/maxgfr/unsleep/compare/v1.1.3...v1.1.4) (2026-02-05)
+
+
+### Bug Fixes
+
+* License ([5429bcb](https://github.com/maxgfr/unsleep/commit/5429bcbf524695a0325724509785addfaf5d247e))
+
 ## [1.1.3](https://github.com/maxgfr/unsleep/compare/v1.1.2...v1.1.3) (2025-12-04)
 
 
