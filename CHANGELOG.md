@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/maxgfr/unsleep/compare/v1.1.4...v1.1.5) (2026-02-09)
+
+
+### Bug Fixes
+
+* remove renovate ([b5b9cb2](https://github.com/maxgfr/unsleep/commit/b5b9cb203570139654e09ecb2a353ff58a07d59f))
+
 ## [1.1.4](https://github.com/maxgfr/unsleep/compare/v1.1.3...v1.1.4) (2026-02-05)
 
 
