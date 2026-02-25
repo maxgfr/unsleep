@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/maxgfr/unsleep/compare/v1.1.5...v1.1.6) (2026-02-25)
+
+
+### Bug Fixes
+
+* enable mouse movement by default and fix x/y axis swap ([07563b4](https://github.com/maxgfr/unsleep/commit/07563b47f0363e5450e02ca359804277f8455a03))
+
 ## [1.1.5](https://github.com/maxgfr/unsleep/compare/v1.1.4...v1.1.5) (2026-02-09)
 
 
