@@ -3,56 +3,62 @@
 import robot from 'robotjs';
 import { program } from 'commander';
 import packageJson from '../package.json';
-
-type ProgramOptions = {
-  mouse: boolean | undefined;
-  autoclick: boolean | undefined;
-  autoclickDelay: string | undefined;
-  mouseDelay: string | undefined;
-};
+import {
+  generateDelay,
+  randomIntFromInterval,
+  resolveOptions,
+  ProgramOptions,
+} from './utils';
 
 program
   .name('unsleep')
   .description('Prevent your computer from sleeping')
   .version(packageJson.version)
-  .option('-a,--autoclick', 'Enable auto clicker')
-  .option('-ad,--autoclick-delay <value>', 'Delay between auto clicks')
-  .option('-m --mouse', 'Enable mouse movement')
-  .option(
-    '-md, --mouse-delay <value>',
-    'Delay between mouse movements in ms (default: 5000)',
-  )
+  .option('-a, --autoclick', 'Enable auto clicker')
+  .option('-ad, --autoclick-delay <value>', 'Delay between auto clicks in ms')
+  .option('-m, --mouse', 'Enable mouse movement')
+  .option('-md, --mouse-delay <value>', 'Delay between mouse movements in ms')
   .parse(process.argv);
 
-const options = program.opts<ProgramOptions>();
+let resolved;
+try {
+  resolved = resolveOptions(program.opts<ProgramOptions>());
+} catch (err) {
+  console.error((err as Error).message);
+  process.exit(1);
+}
 
-const hasMouseOption = options.mouse;
-const hasAutoClickOption = options.autoclick;
-const autoClickDelay = options.autoclickDelay;
-const mouseDelay = options.mouseDelay;
-
-const generateDelay = (ms: number) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
-
-const randomIntFromInterval = (min: number, max: number) =>
-  Math.floor(Math.random() * (max - min + 1) + min);
-
+const { mouse, autoclick, mouseDelayMs, autoclickDelayMs } = resolved;
 const screenSize = robot.getScreenSize();
 
-const MOUSE_DELAY_MS = mouseDelay ? parseInt(mouseDelay) : 5000;
-const AUTOCLICK_DELAY_MS = autoClickDelay ? parseInt(autoClickDelay) : 5000;
+const features = [
+  mouse && `mouse movement every ${mouseDelayMs}ms`,
+  autoclick && `auto click every ${autoclickDelayMs}ms`,
+]
+  .filter(Boolean)
+  .join(', ');
+
+console.log(`unsleep is running (${features}). Press Ctrl+C to stop.`);
+
+let running = true;
+
+process.on('SIGINT', () => {
+  console.log('\nunsleep stopped.');
+  running = false;
+  process.exit(0);
+});
 
 (async function () {
-  while (true) {
-    if (hasMouseOption) {
-      await generateDelay(MOUSE_DELAY_MS);
+  while (running) {
+    if (mouse) {
+      await generateDelay(mouseDelayMs);
       robot.moveMouse(
-        randomIntFromInterval(0, screenSize.height),
         randomIntFromInterval(0, screenSize.width),
+        randomIntFromInterval(0, screenSize.height),
       );
     }
-    if (hasAutoClickOption) {
-      await generateDelay(AUTOCLICK_DELAY_MS);
+    if (autoclick) {
+      await generateDelay(autoclickDelayMs);
       robot.mouseClick();
     }
   }
