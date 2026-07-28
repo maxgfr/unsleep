@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/maxgfr/unsleep/compare/v1.1.6...v1.1.7) (2026-07-28)
+
+
+### Bug Fixes
+
+* update robotjs to ^0.8.0 and pin commander to ~12.1.0 for Node 20 CI ([85242ad](https://github.com/maxgfr/unsleep/commit/85242ad4b19654990ccc362f4662491b5f166c8a))
+
 ## [1.1.6](https://github.com/maxgfr/unsleep/compare/v1.1.5...v1.1.6) (2026-02-25)
 
 
