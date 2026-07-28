@@ -39,8 +39,8 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "commander": "^12.1.0",
-    "robotjs": "^0.6.0"
+    "commander": "~12.1.0",
+    "robotjs": "^0.8.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
